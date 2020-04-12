@@ -2,18 +2,13 @@ package com.bhavaniprasad.tmdbapp.ViewModel;
 
 import android.content.Context;
 import android.util.Log;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
 import com.bhavaniprasad.tmdbapp.Model.ListModel;
 import com.bhavaniprasad.tmdbapp.remote.ApiMaker;
 import com.bhavaniprasad.tmdbapp.remote.ApiService;
-
 import java.util.ArrayList;
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

@@ -17,7 +17,7 @@
 
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_margin="10sp"
             android:layout_height="wrap_content">
 
@@ -31,6 +31,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
+                android:id="@+id/centrelayout"
                 android:layout_toRightOf="@+id/avatar"
                 android:layout_toLeftOf="@+id/rightlayout"
                 android:layout_height="wrap_content">
@@ -39,6 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="name"
+                    android:singleLine="false"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
@@ -49,16 +51,17 @@
                     android:id="@+id/datedetail"
                     />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:singleLine="false"
-                    android:text="description"
-                    android:id="@+id/description"
-                    />
-
-
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/centrelayout"
+                android:layout_toEndOf="@+id/avatar"
+                android:singleLine="false"
+                android:text="description"
+                android:id="@+id/description"
+                />
 
 
             <LinearLayout
